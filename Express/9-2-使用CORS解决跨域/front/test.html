@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>接口请求</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.getElementsByTagName('div')[0].onclick = () => {
+      axios.get('http://127.0.0.1:3000/api/v1/course/find?id=1').then(res => {
+        console.log(res);
+      })
+    }
+
+
+  </script>
+  </script>
+</body>
+
+</html>
